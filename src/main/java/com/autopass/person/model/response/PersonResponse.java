@@ -4,7 +4,6 @@ import java.time.LocalDate;
 
 import com.autopass.person.model.Person;
 
-import com.autopass.person.model.enums.DocumentType;
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonInclude.Include;

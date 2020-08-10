@@ -47,21 +47,21 @@ public class PersonController implements PersonApi {
     @Override
     @PutMapping("/{personId}")
     @ResponseStatus(code = ACCEPTED)
-    public PersonResponse update(@PathVariable Long personId, @RequestBody UpdatePersonPayload payload) {
+    public PersonResponse update(@PathVariable String personId, @RequestBody UpdatePersonPayload payload) {
         return service.update(personId, payload);
     }
 
     @Override
     @DeleteMapping("/{personId}")
     @ResponseStatus(code = ACCEPTED)
-    public void delete(@PathVariable Long personId) {
+    public void delete(@PathVariable String personId) {
         service.delete(personId);
     }
 
     @Override
     @GetMapping("/{personId}")
     @ResponseStatus(code = OK)
-    public PersonResponse findOne(@PathVariable Long personId) {
+    public PersonResponse findOne(@PathVariable String personId) {
         return service.findById(personId);
     }
 

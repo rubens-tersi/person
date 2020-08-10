@@ -37,21 +37,21 @@ public interface PersonApi {
             @ApiResponse(code = 400, message = "Wrong payload parameters", response = ErrorResponse.class),
             @ApiResponse(code = 409, message = "Payload has duplicate Phone Numbers (Main phone or any in list)", response = ErrorResponse.class),
             @ApiResponse(code = 500, message = "Unexpected error", response = void.class) })
-    PersonResponse update(@ApiParam(value = "Person associated Id.", example = "123") Long personId, @Valid UpdatePersonPayload payload);
+    PersonResponse update(@ApiParam(value = "Person associated Id.", example = "123") String personId, @Valid UpdatePersonPayload payload);
 
     @ApiOperation(value = "Delete Person by Id", produces = APPLICATION_JSON_VALUE)
     @ApiResponses({ @ApiResponse(code = 202, message = "Person deleted with success", response = void.class),
             @ApiResponse(code = 204, message = "No Person associated with given Id", response = void.class),
             @ApiResponse(code = 400, message = "Wrong id format", response = ErrorResponse.class),
             @ApiResponse(code = 500, message = "Unexpected error", response = void.class) })
-    void delete(@ApiParam(value = "Person associated Id.", example = "123") Long personId);
+    void delete(@ApiParam(value = "Person associated Id.", example = "123") String personId);
 
     @ApiOperation(value = "Find a Person by Id", produces = APPLICATION_JSON_VALUE)
     @ApiResponses({ @ApiResponse(code = 200, message = "Person found", response = PersonResponse.class),
             @ApiResponse(code = 204, message = "No Person associated with given Id", response = void.class),
             @ApiResponse(code = 400, message = "Wrong id format", response = ErrorResponse.class),
             @ApiResponse(code = 500, message = "Unexpected error", response = void.class) })
-    PersonResponse findOne(@ApiParam(value = "Person associated Id.", example = "123") Long personId);
+    PersonResponse findOne(@ApiParam(value = "Person associated Id.", example = "123") String personId);
 
 
     @ApiOperation(value = "Find all People", produces = APPLICATION_JSON_VALUE)

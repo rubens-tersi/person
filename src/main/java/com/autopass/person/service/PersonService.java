@@ -31,21 +31,21 @@ public class PersonService {
         return new PersonResponse(repository.save(createPerson(payload)));
     }
 
-    public PersonResponse update(Long personId, UpdatePersonPayload payload) {
-        return repository.findByPersonIdAndDeletedFalse(personId).map(person -> updatePerson(person, payload)).map(PersonResponse::new)
+    public PersonResponse update(String personId, UpdatePersonPayload payload) {
+        return repository.findByIdAndDeletedFalse(personId).map(person -> updatePerson(person, payload)).map(PersonResponse::new)
                 .orElseThrow(PersonNotFoundException::new);
     }
 
-    public void delete(Long personId) {
-        final var foundPerson = repository.findByPersonIdAndDeletedFalse(personId).orElseThrow(PersonNotFoundException::new);
+    public void delete(String personId) {
+        final var foundPerson = repository.findByIdAndDeletedFalse(personId).orElseThrow(PersonNotFoundException::new);
 
         foundPerson.setDeleted(true);
 
         repository.save(foundPerson);
     }
 
-    public PersonResponse findById(Long personId) {
-        var person = repository.findByPersonIdAndDeletedFalse(personId).orElseThrow(PersonNotFoundException::new);
+    public PersonResponse findById(String personId) {
+        var person = repository.findByIdAndDeletedFalse(personId).orElseThrow(PersonNotFoundException::new);
 
         return new PersonResponse(person);
     }

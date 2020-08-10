@@ -3,8 +3,7 @@ package com.autopass.person.exception.handler;
 import static org.springframework.http.HttpStatus.BAD_REQUEST;
 import static org.springframework.http.HttpStatus.CONFLICT;
 import static org.springframework.http.HttpStatus.INTERNAL_SERVER_ERROR;
-import static org.springframework.http.HttpStatus.NO_CONTENT;
-import static org.springframework.http.HttpStatus.PRECONDITION_FAILED;
+
 
 import java.util.ArrayList;
 import java.util.Collection;
@@ -22,14 +21,11 @@ import org.springframework.web.bind.annotation.ExceptionHandler;
 import org.springframework.web.bind.annotation.ResponseStatus;
 import org.springframework.web.bind.annotation.RestControllerAdvice;
 import org.springframework.web.method.annotation.MethodArgumentTypeMismatchException;
-import org.springframework.web.multipart.MultipartException;
 
 import com.autopass.person.exception.HashDoesNotMatchUserException;
-import com.autopass.person.exception.InvalidNumberOfFacesException;
 import com.autopass.person.exception.InvalidSearchException;
 import com.autopass.person.exception.PersonAssociationException;
 import com.autopass.person.exception.PersonNotFoundException;
-import com.autopass.person.exception.SocialNetworkAlreadyBindedException;
 import com.autopass.person.model.response.ErrorResponse;
 import com.fasterxml.jackson.databind.JsonMappingException;
 
@@ -74,12 +70,6 @@ public class PersonExceptionHandler {
     @ResponseStatus(code = BAD_REQUEST)
     public ErrorResponse handleInvalidSearchException() {
         return ErrorResponse.as(message("invalid.search"));
-    }
-
-    @ExceptionHandler(SocialNetworkAlreadyBindedException.class)
-    @ResponseStatus(code = CONFLICT)
-    public ErrorResponse handleSocialNetworkAlreadyBindedException(SocialNetworkAlreadyBindedException ex) {
-        return ErrorResponse.as(message("socialNetwork.alreadyBinded", message(ex.getSocialNetwork().toString().toLowerCase())));
     }
 
     @ExceptionHandler(PersonNotFoundException.class)

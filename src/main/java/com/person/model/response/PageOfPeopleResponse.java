@@ -1,4 +1,4 @@
-package com.autopass.person.model.response;
+package com.person.model.response;
 
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.PageImpl;

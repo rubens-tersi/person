@@ -1,4 +1,4 @@
-package com.autopass.person.model.response;
+package com.person.model.response;
 
 import java.io.Serializable;
 

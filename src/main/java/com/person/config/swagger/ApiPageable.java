@@ -1,4 +1,4 @@
-package com.autopass.person.config.swagger;
+package com.person.config.swagger;
 
 import java.lang.annotation.ElementType;
 import java.lang.annotation.Retention;

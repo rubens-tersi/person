@@ -1,4 +1,4 @@
-package com.autopass.person.exception.handler;
+package com.person.exception.handler;
 
 import static org.springframework.http.HttpStatus.BAD_REQUEST;
 import static org.springframework.http.HttpStatus.CONFLICT;
@@ -22,12 +22,12 @@ import org.springframework.web.bind.annotation.ResponseStatus;
 import org.springframework.web.bind.annotation.RestControllerAdvice;
 import org.springframework.web.method.annotation.MethodArgumentTypeMismatchException;
 
-import com.autopass.person.exception.HashDoesNotMatchUserException;
-import com.autopass.person.exception.InvalidSearchException;
-import com.autopass.person.exception.PersonAssociationException;
-import com.autopass.person.exception.PersonNotFoundException;
-import com.autopass.person.model.response.ErrorResponse;
 import com.fasterxml.jackson.databind.JsonMappingException;
+import com.person.exception.HashDoesNotMatchUserException;
+import com.person.exception.InvalidSearchException;
+import com.person.exception.PersonAssociationException;
+import com.person.exception.PersonNotFoundException;
+import com.person.model.response.ErrorResponse;
 
 @RestControllerAdvice
 public class PersonExceptionHandler {

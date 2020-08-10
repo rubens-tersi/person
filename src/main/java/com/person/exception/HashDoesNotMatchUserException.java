@@ -1,4 +1,4 @@
-package com.autopass.person.exception;
+package com.person.exception;
 
 public class HashDoesNotMatchUserException extends RuntimeException {
     private static final long serialVersionUID = -7006632378928218163L;

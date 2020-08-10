@@ -1,4 +1,4 @@
-package com.autopass.person.api;
+package com.person.api;
 
 import static org.springframework.http.MediaType.APPLICATION_JSON_VALUE;
 
@@ -6,13 +6,13 @@ import javax.validation.Valid;
 
 import org.springframework.data.domain.Pageable;
 
-import com.autopass.person.config.swagger.ApiPageable;
-import com.autopass.person.model.payload.CreatePersonPayload;
-import com.autopass.person.model.payload.PersonSearchParams;
-import com.autopass.person.model.payload.UpdatePersonPayload;
-import com.autopass.person.model.response.ErrorResponse;
-import com.autopass.person.model.response.PageOfPeopleResponse;
-import com.autopass.person.model.response.PersonResponse;
+import com.person.config.swagger.ApiPageable;
+import com.person.model.payload.CreatePersonPayload;
+import com.person.model.payload.PersonSearchParams;
+import com.person.model.payload.UpdatePersonPayload;
+import com.person.model.response.ErrorResponse;
+import com.person.model.response.PageOfPeopleResponse;
+import com.person.model.response.PersonResponse;
 
 import io.swagger.annotations.Api;
 import io.swagger.annotations.ApiOperation;

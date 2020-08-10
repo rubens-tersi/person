@@ -1,12 +1,11 @@
-package com.autopass.person.model.response;
+package com.person.model.response;
 
 import java.time.LocalDate;
-
-import com.autopass.person.model.Person;
 
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonInclude.Include;
+import com.person.model.Person;
 
 import io.swagger.annotations.ApiModelProperty;
 import lombok.AllArgsConstructor;

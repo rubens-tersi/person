@@ -1,9 +1,9 @@
-package com.autopass.person.util.validator.impl;
+package com.person.util.validator.impl;
 
 import javax.validation.ConstraintValidator;
 import javax.validation.ConstraintValidatorContext;
 
-import com.autopass.person.util.validator.ValidCPF;
+import com.person.util.validator.ValidCPF;
 
 import br.com.caelum.stella.validation.CPFValidator;
 

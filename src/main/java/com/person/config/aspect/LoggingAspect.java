@@ -1,4 +1,4 @@
-package com.autopass.person.config.aspect;
+package com.person.config.aspect;
 
 import org.aspectj.lang.ProceedingJoinPoint;
 import org.aspectj.lang.annotation.Around;

@@ -1,4 +1,4 @@
-package com.autopass.person.controller;
+package com.person.controller;
 
 import static org.springframework.http.HttpStatus.ACCEPTED;
 import static org.springframework.http.HttpStatus.CREATED;
@@ -17,13 +17,13 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.ResponseStatus;
 import org.springframework.web.bind.annotation.RestController;
 
-import com.autopass.person.api.PersonApi;
-import com.autopass.person.model.payload.CreatePersonPayload;
-import com.autopass.person.model.payload.PersonSearchParams;
-import com.autopass.person.model.payload.UpdatePersonPayload;
-import com.autopass.person.model.response.PageOfPeopleResponse;
-import com.autopass.person.model.response.PersonResponse;
-import com.autopass.person.service.PersonService;
+import com.person.api.PersonApi;
+import com.person.model.payload.CreatePersonPayload;
+import com.person.model.payload.PersonSearchParams;
+import com.person.model.payload.UpdatePersonPayload;
+import com.person.model.response.PageOfPeopleResponse;
+import com.person.model.response.PersonResponse;
+import com.person.service.PersonService;
 
 @Validated
 @CrossOrigin

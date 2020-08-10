@@ -1,4 +1,4 @@
-package com.autopass.person.model;
+package com.person.model;
 
 import java.time.LocalDate;
 import java.time.LocalDateTime;

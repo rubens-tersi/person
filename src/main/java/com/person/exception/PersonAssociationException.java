@@ -1,4 +1,4 @@
-package com.autopass.person.exception;
+package com.person.exception;
 
 
 public class PersonAssociationException extends RuntimeException {

@@ -1,4 +1,4 @@
-package com.autopass.person.exception;
+package com.person.exception;
 
 public class PersonNotFoundException extends RuntimeException {
 

@@ -1,11 +1,11 @@
-package com.autopass.person.config;
+package com.person.config;
 
 import static springfox.documentation.builders.RequestHandlerSelectors.basePackage;
 
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 
-import com.autopass.person.PersonApplication;
+import com.person.PersonApplication;
 
 import springfox.documentation.builders.ApiInfoBuilder;
 import springfox.documentation.service.ApiInfo;

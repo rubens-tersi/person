@@ -1,4 +1,4 @@
-package com.autopass.person.config;
+package com.person.config;
 
 import java.io.IOException;
 import java.time.LocalDate;

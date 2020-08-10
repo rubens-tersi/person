@@ -1,4 +1,4 @@
-package com.autopass.person.config;
+package com.person.config;
 
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;

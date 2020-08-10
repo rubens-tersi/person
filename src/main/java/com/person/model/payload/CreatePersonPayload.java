@@ -1,4 +1,4 @@
-package com.autopass.person.model.payload;
+package com.person.model.payload;
 
 import java.time.LocalDate;
 
@@ -7,11 +7,11 @@ import javax.validation.constraints.NotBlank;
 import javax.validation.constraints.NotNull;
 import javax.validation.constraints.Size;
 
-import com.autopass.person.config.LocalDateDeserializer;
-import com.autopass.person.config.LocalDateSerializer;
-import com.autopass.person.util.validator.CompositeName;
 import com.fasterxml.jackson.databind.annotation.JsonDeserialize;
 import com.fasterxml.jackson.databind.annotation.JsonSerialize;
+import com.person.config.LocalDateDeserializer;
+import com.person.config.LocalDateSerializer;
+import com.person.util.validator.CompositeName;
 
 import io.swagger.annotations.ApiModel;
 import io.swagger.annotations.ApiModelProperty;

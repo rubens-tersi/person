@@ -1,4 +1,4 @@
-package com.autopass.person.model.payload;
+package com.person.model.payload;
 
 import io.swagger.annotations.ApiModelProperty;
 import lombok.AllArgsConstructor;

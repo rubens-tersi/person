@@ -26,7 +26,7 @@ public class SwaggerConfig {
     }
 
     private ApiInfo apiInfo() {
-        return new ApiInfoBuilder().title("Autopass - Person").description("Person management API.").version("1.0").build();
+        return new ApiInfoBuilder().title("Person").description("Person management API.").version("1.0").build();
     }
 
 }

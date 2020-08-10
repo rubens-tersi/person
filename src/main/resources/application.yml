@@ -1,0 +1,14 @@
+server:
+  servlet:
+    context-path: /api/person
+spring:
+  data:
+    mongodb:
+      host: localhost
+      port: 27017
+      database: person
+      authentication-database: admin
+      username: admin
+      password: admin
+
+

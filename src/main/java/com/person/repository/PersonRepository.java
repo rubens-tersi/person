@@ -1,11 +1,11 @@
-package com.autopass.person.repository;
+package com.person.repository;
 
 import java.util.Optional;
 
 import org.springframework.data.mongodb.repository.MongoRepository;
 import org.springframework.data.repository.query.QueryByExampleExecutor;
 
-import com.autopass.person.model.Person;
+import com.person.model.Person;
 
 public interface PersonRepository extends MongoRepository<Person, String>, QueryByExampleExecutor<Person> {
 

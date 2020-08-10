@@ -1,4 +1,4 @@
-package com.autopass.person.util.validator;
+package com.person.util.validator;
 
 import java.lang.annotation.Documented;
 import java.lang.annotation.ElementType;
@@ -9,15 +9,15 @@ import java.lang.annotation.Target;
 import javax.validation.Constraint;
 import javax.validation.Payload;
 
-import com.autopass.person.util.validator.impl.CompositeNameValidator;
+import com.person.util.validator.impl.ValidCpfValidator;
 
 @Documented
-@Constraint(validatedBy = CompositeNameValidator.class)
+@Constraint(validatedBy = ValidCpfValidator.class)
 @Target({ ElementType.METHOD, ElementType.FIELD, ElementType.TYPE, ElementType.PARAMETER })
 @Retention(RetentionPolicy.RUNTIME)
-public @interface CompositeName {
+public @interface ValidCPF {
 
-    String message() default "Name is not composite";
+    String message() default "Invalid CPF";
 
     Class<?>[] groups() default {};
 

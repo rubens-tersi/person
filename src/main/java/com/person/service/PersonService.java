@@ -1,4 +1,4 @@
-package com.autopass.person.service;
+package com.person.service;
 
 import java.util.Optional;
 
@@ -7,15 +7,15 @@ import org.springframework.data.domain.ExampleMatcher.StringMatcher;
 import org.springframework.data.domain.Pageable;
 import org.springframework.stereotype.Service;
 
-import com.autopass.person.exception.PersonAssociationException;
-import com.autopass.person.exception.PersonNotFoundException;
-import com.autopass.person.model.Person;
-import com.autopass.person.model.payload.CreatePersonPayload;
-import com.autopass.person.model.payload.PersonSearchParams;
-import com.autopass.person.model.payload.UpdatePersonPayload;
-import com.autopass.person.model.response.PageOfPeopleResponse;
-import com.autopass.person.model.response.PersonResponse;
-import com.autopass.person.repository.PersonRepository;
+import com.person.exception.PersonAssociationException;
+import com.person.exception.PersonNotFoundException;
+import com.person.model.Person;
+import com.person.model.payload.CreatePersonPayload;
+import com.person.model.payload.PersonSearchParams;
+import com.person.model.payload.UpdatePersonPayload;
+import com.person.model.response.PageOfPeopleResponse;
+import com.person.model.response.PersonResponse;
+import com.person.repository.PersonRepository;
 
 import lombok.AllArgsConstructor;
 

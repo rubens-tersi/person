@@ -24,7 +24,7 @@ apply plugin: 'io.spring.dependency-management'
 apply plugin: 'jacoco'
 apply plugin: 'eclipse'
 
-group = 'com.autopass'
+group = 'com'
 sourceCompatibility = '11'
 
 repositories {
